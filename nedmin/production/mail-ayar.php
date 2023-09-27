@@ -8,29 +8,29 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Api Ayarlar <small>İşlem Durumu <?php if ($_GET['durum']=="ok") {?>
+                        <h2>Api Ayarlar <small>İşlem Durumu <?php if ($_GET['durum'] == "ok") { ?>
                                     <br>
                                     <br>
                                     <strong class="green">Ayarlar Başarıyla Güncellendi!</strong>
-                                <?php } elseif ($_GET['durum']=="no") {?>
+                                <?php } elseif ($_GET['durum'] == "no") { ?>
                                     <br>
                                     <br>
                                     <strong class="red">Üzgünüz Ayarlar Güncellenemedi :(</strong>
-                                <?php }?></small></h2>
+                                <?php } ?></small></h2>
                         <?php
-                        if ($_GET['durum']=="ok") {?>
+                        if ($_GET['durum'] == "ok") { ?>
                             <div class="col-md-3 col-sm-3 col-xs-6 col-md-offset-3">
                                 <div class="alert alert-success alert-dismissible fade in -align-center text-center" role="alert">
                                     <strong>Tebrikler!</strong> Ayarlar başarıyla güncellendi.
                                 </div>
                             </div>
-                        <?php } elseif ($_GET['durum']=="no") {?>
+                        <?php } elseif ($_GET['durum'] == "no") { ?>
                             <div class="col-md-3 col-sm-3 col-xs-6 col-md-offset-3">
                                 <div class="alert alert-danger alert-dismissible fade in -align-center text-center" role="alert">
                                     <strong>Üzgünüz!</strong> Ayarlar güncellenemedi.
                                 </div>
                             </div>
-                        <?php }?>
+                        <?php } ?>
 
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -85,10 +85,10 @@
                                 </div>
                             </div>
                             <hr>
-                                <div align="right" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button type="submit" class="btn btn-primary">İptal Et</button>
-                                    <button type="submit" name="mailayarkaydet" class="btn btn-success">Güncelle</button>
-                                </div>
+                            <div align="right" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                <button type="submit" class="btn btn-primary">İptal Et</button>
+                                <button type="submit" name="mailayarkaydet" class="btn btn-success">Güncelle</button>
+                            </div>
                         </form>
                     </div>
                 </div>
